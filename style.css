@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./bg.jpg) no-repeat;
+    overflow: hidden;
+    /* 图片大小和body一样，也就是铺满整个body。 */
+    background-size: 100% 100%;
+    /* 设置图片不随滚动而变化 */
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 380px;
+    margin: 7% auto;
+    border-radius: 25px;
+    /* 通过rgba方法设置透明的背景颜色 */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* 设置阴影 */
+    box-shadow: 0 0 20px black;
+    /* 通过text-align让子元素居中对齐(只对行内元素起效) */
+    text-align: center;
+}
+
+.header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 24px;
+    color: #333;
+}
+
+.main form {
+    padding-bottom: 50px;
+}
+
+.main form input,
+button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.main button {
+    padding-left: 0;
+    background-color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main span {
+    position: relative;
+}
+
+.main span i {
+    position: absolute;
+    left: 20px;
+    top: 2px;
+}
+
+.main button:hover {
+    background-color: skyblue;
+}
+
+.main input:hover {
+    background-color: skyblue;
+}
